@@ -13,4 +13,5 @@ marketing_analytics_hw1.Rmd: The R Markdown file containing the code, analysis, 
 marketing_analytics_hw1.pdf: The rendered PDF document generated from the R Markdown file.
 
 Data Sources
+
 Amazon Echo Sales Data: The number of units sold worldwide for Amazon Echo from 2014 to 2023 was used as a proxy for market data. This data was sourced from Statista.
