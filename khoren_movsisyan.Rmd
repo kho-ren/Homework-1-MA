@@ -12,6 +12,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 1. Chosen Invention: Robot Coworker - "Sanctuary AI Phoenix"
 
+https://time.com/collection/best-inventions-2023/6326928/sanctuary-ai-phoenix/
+
+
 2. Look-alike innovation from the past: Amazon Echo - "A smart speaker with voice control."
 
 For a product like the Sanctuary AI Phoenix, the market is relatively new and there is not much data that would be enough for this task. The only related data I was able to found were not for a single product or product line, but rather the whole robotics industry. That is why I decided to take a Amazon Echo, for which there is plenty of data, as a look-alike product. 
@@ -32,7 +35,7 @@ The connection between these two innovations can help us understand the potentia
 The data chosen for the look-alike innovation is the number of units sold worldwide. The data includes sales from 2014 until 2023. Originally the data contained predicted sales for the years 2024 and 2025, however I have removed them from the calculation. There are two columns in the data, the first being the year and the second one being the units sold in millions of units.
 
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, include=FALSE, warning=FALSE}
 libs<-c('ggplot2','ggpubr','knitr','diffusion','readxl')
 
 load_libraries<-function(libs){
@@ -170,6 +173,15 @@ We know that in 2023 there were about 4.5 million robot units sold, and also tha
 There are about 334 million companies worldwide. We can assume, hypothetically,
 that the number of companies that will want to sometime in the future use robot coworkers to be about 20% of the total number. We get 66.8mln companies that could use industrial robots. 
 We will also need to assume/predict an Average Adoption Rate per Adopter. Let's assume each potential adopter purchases an average of 10 industrial robots.
+
+So our final Market Potential would be 66.8 mln * 10 = 668 mln units.
+
+Innovators: 668,000,000 * 0.025 = 16,700,000
+Early Adopters: 668,000,000 * 0.135 = 90,180,000
+Early Majority: 668,000,000 * 0.34 = 227,120,000
+Late Majority: 668,000,000 * 0.34 = 227,120,000
+Laggards: 668,000,000 * 0.16 = 106,880,000
+
 
 
 References
