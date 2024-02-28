@@ -158,6 +158,7 @@ Prediction:
 
 ```{r}
 data_with_predictions$Pred_sales = bass.f(1:11, p=0.006967, q=0.3986) * 935.7
+
 ggplot(data_with_predictions, aes(Year, Units)) + geom_bar(stat = 'identity') + 
   geom_point(mapping = aes(Year, Pred_sales), color = 'red')
 ```
@@ -170,5 +171,13 @@ There are about 334 million companies worldwide. We can assume, hypothetically,
 that the number of companies that will want to sometime in the future use robot coworkers to be about 20% of the total number. We get 66.8mln companies that could use industrial robots. 
 We will also need to assume/predict an Average Adoption Rate per Adopter. Let's assume each potential adopter purchases an average of 10 industrial robots.
 
+
+References
+
+https://time.com/collection/best-inventions-2023/6326928/sanctuary-ai-phoenix/
+
+https://www.statista.com/forecasts/1388096/global-robotics-volume-by-category
+
+https://www.statista.com/statistics/1022701/worldwide-amazon-echo-unit-shipment/ 
 
 
