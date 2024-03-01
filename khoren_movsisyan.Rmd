@@ -32,7 +32,7 @@ The connection between these two innovations can help us understand the potentia
 
 3. Data for the look-alike innovation:
 
-The data chosen for the look-alike innovation is the number of units sold worldwide. The data includes sales from 2014 until 2023. Originally the data contained predicted sales for the years 2024 and 2025, however I have removed them from the calculation. There are two columns in the data, the first being the year and the second one being the units sold in millions of units.
+The data chosen for the look-alike innovation is the number of units sold worldwide. It is the sold units of Amazon Echo devices from 2014 until 2023. Originally the data contained predicted sales for the years 2024 and 2025, however I have removed them from the calculation. There are two columns in the data, the first being the year and the second one being the units sold in millions of units.
 
 
 ```{r, echo=FALSE, include=FALSE, warning=FALSE}
@@ -168,11 +168,10 @@ ggplot(data_with_predictions, aes(Year, Units)) + geom_bar(stat = 'identity') +
 
 Here is my approach to estimate the number of adopters by period for the industrial robots market.
 
-We know that in 2023 there were about 4.5 million robot units sold, and also that from 2016-2023 a total of 28.74 mln industrial and service robots have been sold.
 
 There are about 334 million companies worldwide. We can assume, hypothetically,
 that the number of companies that will want to sometime in the future use robot coworkers to be about 20% of the total number. We get 66.8mln companies that could use industrial robots. 
-We will also need to assume/predict an Average Adoption Rate per Adopter. Let's assume each potential adopter purchases an average of 10 industrial robots.
+We will also need to assume/predict an Average Adoption Rate per Adopter. Let's assume each potential adopter purchases an average of about 10 industrial robots.
 
 So our final Market Potential would be 66.8 mln * 10 = 668 mln units.
 
